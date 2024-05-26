@@ -1,0 +1,246 @@
+
+.headerDados{
+    text-align: center;
+}
+
+.headerDados hr {
+    margin: 10px auto;
+    width: 75%;
+}
+
+.headerSubDados{
+    display: flex;
+    flex-direction: column;
+}
+
+.headerSubDados h1{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.headerSubDados hr{
+    margin: 10px auto;
+    width: 85%;
+}
+
+.formDados{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.containerDadosProposta {
+    margin: 0 auto;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btnStatusProposta{
+    margin-top: 10px;
+    display: flex;
+}
+
+.containerInfImovel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoArea {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.dadosProps{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.compradorArea{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.vendedorArea{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.conjugueDados{
+    display: none;
+}
+
+.compRendaConjugue {
+    display: none;
+}
+
+
+.areaInicial{
+    display: flex;
+}
+
+.retorno{
+    display: flex;
+    align-items: center; /* Isso alinhará verticalmente o conteúdo */
+    height: 80px; /* Defina a altura da div conforme necessário */
+}
+
+.retorno a{
+    text-decoration: none;
+    margin-left: 25px;
+    color: #111;
+}
+
+.retorno a:hover{
+    text-decoration: none;
+    margin-left: 25px;
+    color: #cdcd00;
+}
+
+/*Btn Gestão Proposta*/
+.btnArea{
+    display: flex;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-right: 15px;
+    position: relative;
+}
+
+@keyframes jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+  }
+
+
+    .btnGestaoProposta .fi {
+        position: absolute;
+        left:5px;
+        font-size: 20px;
+
+    }
+  
+
+  .btnGestaoProposta:hover .fi {
+    animation: jump 0.5s ease infinite;
+  }
+
+  .excluir:hover .fi {
+    animation: jump 0.5s ease infinite;
+  }
+  
+ 
+  .fi {
+    display: inline-block; 
+  }
+  
+
+  .btnGestaoProposta {
+    display: flex;
+    padding: 0.8em 1.8em;
+    border: 2px solid #cdcd00;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #111;
+    margin-right: 15px;
+  }
+  
+
+  .btngrupDados {
+    margin-right: -21px;
+  }
+
+  .btnGestaoProposta::before {
+    content: '';
+    width: 0;
+    height: 250%;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #cdcd00;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+  }
+  
+  .btnGestaoProposta:hover::before {
+    width: 105%;
+  }
+  
+  .btnGestaoProposta:hover {
+    color: #111;
+  } 
+
+  .excluir {
+    display: flex;
+    padding: 0.8em 1.8em;
+    border: 2px solid #ff2323;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #111;
+    margin-right: 15px;
+  }
+
+  .excluir::before {
+    content: '';
+    width: 0;
+    height: 250%;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #ff2323;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+  }
+
+  .excluir:hover::before {
+    width: 105%;
+  }
+
+  .docArea {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .docuser {
+      text-align: left;
+  }
+
+  .docuser a {
+    text-decoration: none;
+    color: rgb(0, 187, 0);
+  }
+
+  .docuser a:hover {
+    color: rgb(0, 59, 0);
+  }
+
+  .deletArea {
+      text-align: right;
+  }
+
+  .vendedorJuridico{
+    display: none;
+  }
+
+
+
+  

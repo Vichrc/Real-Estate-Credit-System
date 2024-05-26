@@ -1,0 +1,114 @@
+@media (max-width:992px){
+    .dis-flex .form-check{
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
+    .buttonclass{
+        flex-direction: column;
+    }
+
+    .criarConta{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:871px){
+    .mobileform{
+        display: flex;
+    }
+
+    .desktopform{
+        display: none;
+    }
+
+    .inputareaperfil{
+        width: 100%;
+        margin-left: 5%;
+    }
+
+    .dadosUser{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:768px){
+    .mensagemErroPassword{
+        margin-top: 5px;
+        margin-left: 5px;
+      }
+    .resultadoarea {
+        display: none;
+    }
+
+    .mobileCarrosselDemonstracao {
+        display: flex;
+    }
+}
+
+@media(max-width:681px){
+    .dadosUserTel{
+        display: none;
+    }
+}
+
+@media (max-width:667px){
+    .emailarea {
+        font-size: 13px;
+    }
+
+    .font-email {
+        font-size: 9px;
+    }
+}
+
+@media (max-width:578px){
+    .statusUser{
+        display: none;
+    }
+
+    .doc_user{
+        margin-top: 5px;
+        display: block;
+        font-size: 13px;
+    }
+}
+
+@media (max-width:575px){
+    .criarConta{
+        font-size: 14px;
+    }
+
+    .formsarea {
+        display: block !important;
+        width: 100%;
+        height: 100%;
+        margin: auto 0 !important;
+    }
+
+    .logomarcaaprova {
+        width: 70%;
+        margin: auto;
+    }
+
+    .backgroundimg{
+        height: 30vh;
+    }
+}
+
+@media (max-width:540px){
+    .none540{
+        display: none;
+    }
+}
+
+@media (max-width:420px){
+    .container-table {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .font-email {
+        display:none;
+    }
+}

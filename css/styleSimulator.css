@@ -1,0 +1,145 @@
+.simulatorarea{
+    margin: auto 0;
+}
+
+.headerSimulator{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.FormSimulator{
+    margin: 0 auto;
+    width: 85%;
+}
+
+.inputSimul{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputSimul img{
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: -31px;
+    cursor: pointer;
+}
+
+.inputSimul .inpRangeInco{
+    margin-left: 10px;
+    margin-top: -2px;
+}
+
+.btnSimulador{
+    margin-top:15px;
+    margin-bottom: 10px;
+    display:flex;
+}
+
+.hover-underline-animation{
+    font-size: 15px;
+}
+  input[type="range"] {
+    display: block;
+    -webkit-appearance: none;
+    background-color: rgb(204, 204, 204);
+    width: 85%;
+    height: 5px;
+    border-radius: 5px;
+    margin: 10px auto 25px auto;
+    outline: 0;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #cdcd00;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+  }​
+    input[type="range"]::-webkit-slider-thumb:active {
+      transform: scale(1.6);
+    }
+
+    .table{
+      width: 85%;
+      margin: 0 auto;
+    }
+
+    .imgAreaBanco{
+      display: flex;
+    }
+
+
+    .iconBancos{
+      width: 35px;
+      height: 35px;
+    }
+
+    .texticon{
+      margin: 10px;
+    }
+
+    .texticonGeral{
+      color: #626262;
+      /*margin-top: 10px;*/
+      margin: 10px;
+    }
+
+
+
+    /*Mobile Dados*/
+    .mobileCarrosselDemonstracao {
+      display: none;
+    }
+    .carrosselDemonstracao{
+      display: flex;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .dadosMobile{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cardDemonstracao hr{
+      width: 85%;
+      margin: 0 auto;
+    }
+
+    .dadosMobile img{
+      width: 70px;
+      height: 70px;
+      margin:5px auto;
+    }
+
+    .dadosMobile span{
+      font-size: 30px;
+      margin: 0px;
+      margin-top: -6px;
+      text-align: center;
+    }
+
+    .cardDemonstracao{
+      margin: 10px auto;
+    }
+
+    .card-body{
+      text-align: center;
+    }
+
+    .carousel-indicators {
+      margin-bottom: -1rem;
+    }
+
+    .carousel-control-prev {
+      left: -8px !important;
+  }
+
+  .carousel-control-next {
+    right: -8px !important;
+}

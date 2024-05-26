@@ -1,0 +1,53 @@
+
+.dadosUser{
+  display: flex;
+  position: relative;
+  top: 10px;
+
+}
+
+.imgUserdados{
+  display: flex;
+  position: relative;
+}
+
+.buttonconfigUser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+    gap: 8px;
+    height: 36px;
+    width: 45px;
+    border: none;
+    background: #cfcf00eb;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .lable {
+    line-height: 20px;
+    font-size: 17px;
+    color: #4e4e4e;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  .buttonconfigUser:hover {
+    background: #e1f101eb;
+  }
+  
+  .buttonconfigUser:hover .svg-icon {
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+

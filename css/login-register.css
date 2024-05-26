@@ -1,0 +1,574 @@
+body {
+    width: auto; /* Largura da tela toda */
+    height: auto;
+    min-height: 100vh; /* Altura da tela toda */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(360deg, #bdbd01 25.91%, rgb(255, 255, 255) 50.84%);
+    margin: 0;
+    padding: 0;
+}
+
+#inicio{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 25px;
+    margin-top: 15px;
+    margin-bottom: -25px;
+    z-index: 10;
+}
+
+#inicio:hover{
+    color: rgb(128, 128, 128);
+}
+
+
+
+.formsarea{
+    margin-top: 25px !important;
+    display: flex !important;
+    width: 100%;
+    min-height: 80vh;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+.backgroundimg{
+    width: 100%;
+    display: flex;
+    background-image: url(img/testdois.jpg);
+}
+.loginArea{
+    display: flex;
+    flex-direction: column;
+}
+
+.logomarcaaprova{
+    position: relative;
+    width: 100%;
+    margin: auto 0;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px 0;
+}
+
+.dis-flex .form-check{
+    margin: auto 0;
+}
+
+.loginArea{
+    width: 90%;
+    position: relative;
+    margin: auto;
+}
+.buttonclass{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+}
+
+.button {
+    padding: 0.8em 1em;
+    background-color: #bdbd01;
+    border-radius: 15px 0 15px 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: #fff;
+    z-index: 1;
+    width: 100%;
+    right: 0;
+    margin-left: auto;
+   }
+   
+   .button::before, .button::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background:  #b3b301;
+    transition: 1s ease;
+   }
+   
+   .button::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .button:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .button:hover {
+    color: rgb(255, 255, 255);
+   }
+   
+   .button:active {
+    filter: brightness(.8);
+   }
+
+   .loginArea h2{
+    color: black;
+    margin-left: auto;
+   }
+
+   .form-control {
+        border-radius: 15px !important;
+    }
+
+    .criarConta{
+        margin-top: 15px;
+        color: black;
+    }
+
+
+    .criarConta p{
+        text-align: center;
+    }
+
+    .criarConta p a{
+        text-decoration: none;
+    }
+
+    footer{
+        color: black;
+    }
+
+    footer a{
+        text-decoration: none;
+        color: black !important;
+    }
+    
+    footer a:hover{
+        color: rgb(44, 44, 44) !important;
+    }
+
+    footer p {
+        margin-bottom: 0rem;
+    }
+
+      @keyframes pulsar {
+        0% { color: #bdbd01; }
+        50% { color: #5a5a00; }
+        100% { color: #bdbd01; }
+      }
+  
+      .criarConta a {
+        color: #bdbd01; /* Cor inicial do link */
+        animation: pulsar 2s infinite; /* Aplica a animação pulsar infinitamente */
+      
+        position: relative;
+        color: black; /* Cor inicial do texto */
+        text-decoration: none; /* Remover o sublinhado padrão */
+  
+        /* Adiciona os elementos ::before e ::after para representar as partes inicial e final do sublinhado */
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -3px;
+          height: 2px; /* Altura do sublinhado */
+          background-color: #bdbd01; /* Cor do sublinhado */
+          width: 0;
+          transition: width 0.3s ease; /* Adiciona uma transição suave para a largura */
+        }
+  
+        /* Ao passar o mouse sobre o link, expande o sublinhado */
+        &:hover::before,
+        &:hover::after {
+          width: 50%; /* Largura desejada do sublinhado (pode ajustar conforme necessário) */
+        }
+  
+        /* Configurações para o elemento ::before (parte inicial do sublinhado) */
+        &::before {
+          left: 50%; /* Posição inicial do centro */
+          transform: translateX(-85%); /* Centraliza o sublinhado */
+        }
+  
+        /* Configurações para o elemento ::after (parte final do sublinhado) */
+        &::after {
+          right: 50%; /* Posição inicial do centro */
+          transform: translateX(85%); /* Centraliza o sublinhado */
+        }
+    
+    
+        }
+  
+      .criarConta a:hover {
+        color: #5a5a00;
+        animation: none; /* Interrompe a animação no hover para evitar conflitos */
+      }
+
+
+      .registerform{
+        margin-top: 25px;
+      }
+
+      .inputregister{
+        margin-left: 5px;
+      }
+
+      .btnregister{ 
+        display: flex;
+    
+      }
+
+      .cta {
+        position: relative;
+        padding: 12px 18px;
+        transition: all 0.2s ease;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-left: auto;
+      }
+      
+      .cta:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-radius: 50px;
+        background: #bdbd01;
+        width: 45px;
+        height: 45px;
+        transition: all 0.3s ease;
+      }
+      
+      .cta span {
+        position: relative;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        top:-1px;
+        color: #5c5c5c;
+      }
+      
+      .cta svg {
+        position: relative;
+        top: -1.5px;
+        margin-left: 10px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke: #5c5c5c;
+        stroke-width: 2;
+        transform: translateX(-5px);
+        transition: all 0.3s ease;
+      }
+      
+      .cta:hover:before {
+        width: 100%;
+        background: #bdbd01;
+      }
+      
+      .cta:hover svg {
+        transform: translateX(0);
+      }
+      
+      .cta:active {
+        transform: scale(0.95);
+      }
+
+      .inputaceite{
+        margin-left: 15px;
+      }
+
+      .termosdeuso{
+        font-size: 15px;
+      }
+
+      .inputaceite a {
+        color: #bdbd01; /* Cor inicial do link */
+        animation: pulsar 2s infinite; /* Aplica a animação pulsar infinitamente */
+      
+        position: relative;
+        color: black; /* Cor inicial do texto */
+        text-decoration: none; /* Remover o sublinhado padrão */
+  
+        /* Adiciona os elementos ::before e ::after para representar as partes inicial e final do sublinhado */
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -3px;
+          height: 2px; /* Altura do sublinhado */
+          background-color: #bdbd01; /* Cor do sublinhado */
+          width: 0;
+          transition: width 0.3s ease; /* Adiciona uma transição suave para a largura */
+        }
+  
+        /* Ao passar o mouse sobre o link, expande o sublinhado */
+        &:hover::before,
+        &:hover::after {
+          width: 50%; /* Largura desejada do sublinhado (pode ajustar conforme necessário) */
+        }
+  
+        /* Configurações para o elemento ::before (parte inicial do sublinhado) */
+        &::before {
+          left: 50%; /* Posição inicial do centro */
+          transform: translateX(-85%); /* Centraliza o sublinhado */
+        }
+  
+        /* Configurações para o elemento ::after (parte final do sublinhado) */
+        &::after {
+          right: 50%; /* Posição inicial do centro */
+          transform: translateX(85%); /* Centraliza o sublinhado */
+        }
+    
+    
+        }
+  
+      .inputaceite a:hover {
+        color: #5a5a00;
+        animation: none; /* Interrompe a animação no hover para evitar conflitos */
+      }
+
+      #inputsenha{
+        padding-right: 35px;
+      }
+
+      .imgocultarsenha{
+        width: 25px;
+        margin-left: auto;
+        margin-top: -2rem;
+        margin-right: 5px;
+        cursor: pointer;
+
+      }
+      
+      .mensagemErroPassword{
+        margin-top: 10px;
+        margin-left: 5px;
+      }
+
+      /*Carregamento registro*/
+
+      .loaderarea{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Use a cor desejada com transparência */
+        z-index: 99999; /* Certifique-se de que o fundo esteja acima de outros elementos */
+        display: flex;
+      }
+
+      .carregar{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+      }
+
+      .carregar h2{
+        color: white;
+        text-align: center;
+      }
+
+      @keyframes square-animation {
+        0% {
+         left: 0;
+         top: 0;
+        }
+       
+        10.5% {
+         left: 0;
+         top: 0;
+        }
+       
+        12.5% {
+         left: 32px;
+         top: 0;
+        }
+       
+        23% {
+         left: 32px;
+         top: 0;
+        }
+       
+        25% {
+         left: 64px;
+         top: 0;
+        }
+       
+        35.5% {
+         left: 64px;
+         top: 0;
+        }
+       
+        37.5% {
+         left: 64px;
+         top: 32px;
+        }
+       
+        48% {
+         left: 64px;
+         top: 32px;
+        }
+       
+        50% {
+         left: 32px;
+         top: 32px;
+        }
+       
+        60.5% {
+         left: 32px;
+         top: 32px;
+        }
+       
+        62.5% {
+         left: 32px;
+         top: 64px;
+        }
+       
+        73% {
+         left: 32px;
+         top: 64px;
+        }
+       
+        75% {
+         left: 0;
+         top: 64px;
+        }
+       
+        85.5% {
+         left: 0;
+         top: 64px;
+        }
+       
+        87.5% {
+         left: 0;
+         top: 32px;
+        }
+       
+        98% {
+         left: 0;
+         top: 32px;
+        }
+       
+        100% {
+         left: 0;
+         top: 0;
+        }
+       }
+       
+       .loader {
+        display: flex;
+        position: relative;
+        width: 96px;
+        height: 96px;
+        transform: rotate(45deg);
+        margin-left: auto;
+        margin-right: auto;
+       }
+       
+       .loader-square {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 28px;
+        height: 28px;
+        margin: 2px;
+        border-radius: 0px;
+        background: #bdbd01;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        animation: square-animation 10s ease-in-out infinite both;
+       }
+       
+       .loader-square:nth-of-type(0) {
+        animation-delay: 0s;
+       }
+       
+       .loader-square:nth-of-type(1) {
+        animation-delay: -1.4285714286s;
+       }
+       
+       .loader-square:nth-of-type(2) {
+        animation-delay: -2.8571428571s;
+       }
+       
+       .loader-square:nth-of-type(3) {
+        animation-delay: -4.2857142857s;
+       }
+       
+       .loader-square:nth-of-type(4) {
+        animation-delay: -5.7142857143s;
+       }
+       
+       .loader-square:nth-of-type(5) {
+        animation-delay: -7.1428571429s;
+       }
+       
+       .loader-square:nth-of-type(6) {
+        animation-delay: -8.5714285714s;
+       }
+       
+       .loader-square:nth-of-type(7) {
+        animation-delay: -10s;
+       }
+
+       @keyframes pushUp {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    h2 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    h2 span {
+        display: inline-block;
+        transform-origin: bottom;
+        animation: pushUp 0.6s infinite;
+    }
+
+    h2 span:nth-child(1) { animation-delay: 0.2s; }
+    h2 span:nth-child(2) { animation-delay: 0.4s; }
+    h2 span:nth-child(3) { animation-delay: 0.6s; }
+
+
+    /* Adicione mais linhas conforme necessário para o número de letras no seu texto */
+
+      
+
+
+
+   
+
